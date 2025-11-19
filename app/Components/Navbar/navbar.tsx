@@ -46,24 +46,39 @@ const navLinks: NavLink[] = [
 function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [openDropdowns, setOpenDropdowns] = useState<Record<string, boolean>>({});
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     const toggleDropdown = (label: string) => {
         setOpenDropdowns((prev) => (prev[label] ? {} : {[label]: true}));
     };
 
+
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                setShow(false);
+            } else {
+                setShow(true);
+            }
+
+            setLastScrollY(currentScrollY);
         };
+
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+
+    }, [lastScrollY]);
 
 
     return (
         <div className={`w-full transition-all bg-white duration-500 fixed top-0 left-0 z-100
-      ${isScrolled ? "bg-(--white) shadow-md" : "bg-transparent"}`}>
+      ${show ? "translate-y-0" : "-translate-y-full"}`}>
 
             <div className="flex items-center justify-between px-[8%] lg:px-[12%] py-5">
                 <div className="flex items-center gap-5">
@@ -71,7 +86,7 @@ function Navbar() {
                         Elegant<span className="text-(--prim)">Design</span>
                     </Link>
 
-                    <nav className="hidden lg:flex space-x-4 menu-link relative ms-10">
+                    <nav className="hidden lg:flex space-x-4 menu-link relative ms-10 GolosText">
                         {navLinks.map((link) =>
                             link.dropdown ? (
                                 <div key={link.label} className="relative group z-50">
@@ -79,7 +94,7 @@ function Navbar() {
                                         href={link.href}
                                         className="flex menu-links text-lg items-center gap-1 hover:text-(--prim) transition-all duration-300">
 
-                                        {link.label} <i className="ri-arrow-down-s-line"></i>
+                                        {link.label} <i className="ri-arrow-down-s-line transition-all duration-300 group-hover:rotate-180"></i>
                                     </Link>
                                     <div
                                         className="absolute left-0 top-8 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all

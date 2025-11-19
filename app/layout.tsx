@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Audiowide, Cal_Sans, Golos_Text} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/Components/Navbar/navbar";
+import SmoothScroll from "@/app/Components/SmoothScroll/SmoothScroll";
 
 const audiowide = Audiowide ({
     weight: "400",
@@ -40,7 +41,9 @@ export default function RootLayout({
         className={`${audiowide.variable} ${golostext.variable} ${calsans.variable}`}
       >
       <Navbar/>
+      <SmoothScroll>
         {children}
+      </SmoothScroll>
       </body>
     </html>
   );
