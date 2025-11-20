@@ -82,7 +82,7 @@ function Navbar() {
 
             <div className="flex items-center justify-between px-[8%] lg:px-[12%] py-5">
                 <div className="flex items-center gap-5">
-                    <Link href="/" className="text-4xl font-bold Audiowide text-(--black) ">
+                    <Link href="/" className="text-lg md:text-3xl font-bold Audiowide text-(--black) ">
                         Elegant<span className="text-(--prim)">Design</span>
                     </Link>
 
@@ -94,7 +94,8 @@ function Navbar() {
                                         href={link.href}
                                         className="flex menu-links text-lg items-center gap-1 hover:text-(--prim) transition-all duration-300">
 
-                                        {link.label} <i className="ri-arrow-down-s-line transition-all duration-300 group-hover:rotate-180"></i>
+                                        {link.label} <i
+                                        className="ri-arrow-down-s-line transition-all duration-300 group-hover:rotate-180"></i>
                                     </Link>
                                     <div
                                         className="absolute left-0 top-8 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all
@@ -122,6 +123,66 @@ function Navbar() {
                             )
                         )}
                     </nav>
+                </div>
+                <div className="flex items-center gap-4">
+                    <button className="hidden lg:flex items-center gap-1">
+                        <i className="bi bi-telephone-inbound text-lg px-3 py-2 rounded-full"/>
+                        <div className="flex flex-col items-start">
+                            <p>Call Us Now</p>
+                            <h3 className="text-(--prim) GolosText">+201277104751</h3>
+                        </div>
+                    </button>
+                    <Link href="/UI-Components/Pages/Contact">
+                        <button className="bg-(--prim) text-sm md:text-lg text-white font-medium px-3 py-2 rounded-full hover:bg-white
+                        hover:text-(--black) border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300">
+                            Get a Quote!
+                        </button>
+                    </Link>
+
+                    <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            className="lg:hidden text-lg">
+                        <i className={`ri-${mobileMenuOpen ? "close-line" : "menu-3-line"} transition-all duration-300`}></i>
+                    </button>
+                </div>
+            </div>
+
+            <div className={`lg:hidden bg-(--white) border-t border-gray-400 overflow-hidden transition-all duration-500
+                ${mobileMenuOpen ? "max-h-[700px] opacity-100 py-4" : "max-h-0 opacity-0 py-0"}`}>
+                <div className="px-[8%] space-y-3">
+                    {navLinks.map((link) => (
+                        <div key={link.label}
+                             className="border border-gray-700/50 rounded-lg overflow-hidden">
+                            {link.dropdown ? (
+                                <>
+                                    <button onClick={() => toggleDropdown(link.label)}
+                                            className="w-full flex justify-between items-center px-4 py-3 text-left
+                                    text-(--text) font-medium hover:text-(--prim) transition">
+                                        {link.label}
+                                        <i className={`ri-arrow-down-s-line transition-transform duration-300
+                                        ${openDropdowns[link.label] ? "rotate-180" : ""}`}/>
+                                    </button>
+                                    <div className={`pl-6 pr-4 bg-gray-800/10 border-t border-gray-700/40 transition-all
+                                    duration-500 ${openDropdowns[link.label] ? "max-h-[360px] opacity-100 py-2" : "max-h-0 opacity-0 py-0"}`}>
+                                        {link.dropdown.map((item) => (
+                                            <Link href={item.href}
+                                                  key={item.label}
+                                                  className="block py-2 font-semibold hover:text-(--prim) transition"
+                                                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                                                {item.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </>
+                            ) : (
+                                <Link href={link.href}
+                                      className=" block px-4 py-3 text-(--text) font-medium hover:text-(--prim) transition"
+                                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                                    {link.label}
+                                </Link>
+                            )}
+
+                        </div>
+                    ))}
                 </div>
             </div>
 
