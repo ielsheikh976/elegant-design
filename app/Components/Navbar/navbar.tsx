@@ -80,7 +80,7 @@ function Navbar() {
         <div className={`w-full transition-all bg-white duration-500 fixed top-0 left-0 z-100
       ${show ? "translate-y-0" : "-translate-y-full"}`}>
 
-            <div className="flex items-center justify-between px-[8%] lg:px-[12%] py-5">
+            <div className="flex items-center justify-between px-[5%] py-5">
                 <div className="flex items-center gap-5">
                     <Link href="/" className="text-lg md:text-3xl font-bold Audiowide text-(--black) ">
                         Elegant<span className="text-(--prim)">Design</span>
@@ -92,7 +92,7 @@ function Navbar() {
                                 <div key={link.label} className="relative group z-50">
                                     <Link
                                         href={link.href}
-                                        className="flex menu-links text-lg items-center gap-1 hover:text-(--prim) transition-all duration-300">
+                                        className="flex menu-links text-md items-center gap-1 hover:text-(--prim) transition-all duration-300">
 
                                         {link.label} <i
                                         className="ri-arrow-down-s-line transition-all duration-300 group-hover:rotate-180"></i>
@@ -116,7 +116,7 @@ function Navbar() {
                                 <Link
                                     key={link.label}
                                     href={link.href}
-                                    className="text-lg hover:text-(--prim) transition-all duration-300">
+                                    className="text-md hover:text-(--prim) transition-all duration-300">
                                     {link.label}
                                 </Link>
 
@@ -125,15 +125,16 @@ function Navbar() {
                     </nav>
                 </div>
                 <div className="flex items-center gap-4">
-                    <button className="hidden lg:flex items-center gap-1">
-                        <i className="bi bi-telephone-inbound text-lg px-3 py-2 rounded-full"/>
+                    <button className="hidden xl:flex items-center gap-1 cursor-pointer"
+                            onClick={() => window.location.href = 'tel:+201277104751'}>
+                        <i className="bi bi-telephone-inbound text-md px-3 py-2 rounded-full"/>
                         <div className="flex flex-col items-start">
                             <p>Call Us Now</p>
                             <h3 className="text-(--prim) GolosText">+201277104751</h3>
                         </div>
                     </button>
                     <Link href="/UI-Components/Pages/Contact">
-                        <button className="bg-(--prim) text-sm md:text-lg text-white font-medium px-3 py-2 rounded-full hover:bg-white
+                        <button className="bg-(--prim) text-sm lg:text-md text-white font-medium lg:px-5 px-2 py-2 rounded-full hover:bg-white
                         hover:text-(--black) border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300">
                             Get a Quote!
                         </button>
