@@ -1,11 +1,11 @@
-import Image from "next/image";
+import Index from "@/app/UI-Components/Index/Index";
 
 export default function Home() {
   return (
       <>
-          <div className="h-[2000px]">
-              home
-          </div>
+          <>
+              <Index/>
+          </>
 
       </>
   );

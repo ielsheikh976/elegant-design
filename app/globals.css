@@ -35,3 +35,123 @@ body{
 .Audiowide{
     font-family: var(--Audiowide);
 }
+
+.menu-link a{
+    font-family: var(--GolosText);
+    font-weight: 300;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-image: url('../public/Hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero-span{
+    position: relative;
+
+}
+.hero-span:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--prim);
+}
+
+.hero-bg-elm{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 100%;
+    box-shadow: 0 0 40px rgba(131, 131, 131, 0.1);
+}
+
+.hero-bg-elm2{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background-color: rgba(195, 195, 195, 0.3);
+    border-radius: 100%;
+    box-shadow: 0 0 40px rgba(131, 131, 131, 0.1);
+}
+
+.hero-content-img i{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: var(--white);
+
+}
+
+.partner-swiper{
+
+    padding: 20px !important;
+ }
+
+.partner-img{
+    transition: var(--transition-regular);
+    cursor: pointer;
+}
+
+.partner-img:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:991px){
+    .hero{
+        height: 100%;
+        margin-top: 8%;
+    }
+    .hero-content-img{
+        top: 70%;
+    }
+}
+
+@media(max-width:575px){
+    .hero{
+        margin-top: 15%;
+    }
+    .hero-content-img{
+        top: 50% !important;
+    }
+}
