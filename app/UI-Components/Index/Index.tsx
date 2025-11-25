@@ -3,6 +3,8 @@ import Hero from "@/app/UI-Components/Index/Hero/page";
 import About from "@/app/UI-Components/Index/About/page";
 import Paralex from "@/app/UI-Components/Index/Paralex/page";
 import Services from "@/app/UI-Components/Index/Services/page";
+import Expertise from "@/app/UI-Components/Index/Expertise/page";
+import PricingPlans from "@/app/UI-Components/Index/PricingPlans/page";
 
 function Index() {
     return (
@@ -11,6 +13,8 @@ function Index() {
             <About/>
             <Paralex/>
             <Services/>
+            <Expertise/>
+            <PricingPlans/>
         </>
     );
 }

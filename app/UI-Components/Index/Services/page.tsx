@@ -55,7 +55,7 @@ function Services() {
                     </div>
                     <div className="w-full lg:w-2/3">
                         <h1 className="CalSans text-4xl md:text-6xl mb-5">
-                            Explore our <span className="text-(--prim)">Comprehensive interior designs</span>
+                            Explore our <span className="text-(--prim)">Comprehensive interior designs </span>
                             Services
                         </h1>
                         <p className="text-gray-400 GolosText">
