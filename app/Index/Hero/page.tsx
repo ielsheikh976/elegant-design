@@ -43,7 +43,7 @@ function Hero() {
                                 <button className="mt-9 border border-gray-500/50 px-5 py-3 rounded-full GolosText
                                 font-semibold hover:bg-(--prim) hover:text-white hover:border-transparent transition-all
                                 duration-300 cursor-pointer group">
-                                    <Link href="/UI-Components/Pages/Services">
+                                    <Link href="/Pages/Services">
                                         Get Our Services <i className="bi bi-arrow-right ps-1"></i>
                                     </Link>
                                 </button>

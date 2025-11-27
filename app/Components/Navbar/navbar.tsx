@@ -10,36 +10,36 @@ type NavLink = {
 
 const navLinks: NavLink[] = [
     {label: "home", href: "/"},
-    {label: "Service", href: "/UI-Components/Pages/Services"},
+    {label: "Service", href: "/Pages/Services"},
     {
         label: "Projects",
-        href: "UI-Components/Projects",
+        href: "/Projects",
         dropdown: [
-            {label: "Projects", href: "UI-Components/Projects"},
-            {label: "Projects Details", href: "UI-Components/Projects/2"}
+            {label: "Projects", href: "/Projects"},
+            {label: "Projects Details", href: "/Projects/2"}
         ]
     },
     {
         label: "Blog",
-        href: "UI-Components/Blogs",
+        href: "/Blogs",
         dropdown: [
-            {label: "Blog", href: "UI-Components/Blogs"},
-            {label: "Blog Details", href: "UI-Components/Blogs/2"}
+            {label: "Blog", href: "/Blogs"},
+            {label: "Blog Details", href: "/Blogs/2"}
         ]
     },
     {
         label: "Pages",
         href: "#",
         dropdown: [
-            {label: "About", href: "UI-Components/Pages/About"},
-            {label: "Team", href: "UI-Components/Pages/Team"},
-            {label: "Gallery", href: "UI-Components/Pages/Gallery"},
-            {label: "Contact", href: "UI-Components/Pages/Contact"},
-            {label: "Page 404", href: "UI-Components/Pages/Page404"},
+            {label: "About", href: "/Pages/About"},
+            {label: "Team", href: "/Pages/Team"},
+            {label: "Gallery", href: "/Pages/Gallery"},
+            {label: "Contact", href: "/Pages/Contact"},
+            {label: "Page 404", href: "/Pages/Page404"},
 
         ]
     },
-    {label: "Contact", href: "UI-Components/Pages/Contact"},
+    {label: "Contact", href: "/Pages/Contact"},
 
 ]
 
@@ -133,7 +133,7 @@ function Navbar() {
                             <h3 className="text-(--prim)">+201277104751</h3>
                         </div>
                     </button>
-                    <Link href="/UI-Components/Pages/Contact">
+                    <Link href="/Pages/Contact">
                         <button className="bg-(--prim) text-sm lg:text-md text-white font-medium lg:px-5 px-2 py-3 rounded-full hover:bg-white
                         hover:text-(--black) border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300">
                             Get a Quote!

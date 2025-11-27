@@ -15,7 +15,7 @@ function Banner() {
                         Let's Start <span className="text-(--prim)">Your New Dream </span>
                         Project
                     </h1>
-                    <Link href="/UI-Components/Pages/Contact">
+                    <Link href="/Pages/Contact">
                         <button className="rounded-full px-10 py-4 GolosText text-white bg-[#5b6063] transition-all duration-300
                         cursor-pointer text-xl hover:bg-(--prim)">
                             Get A Quote!
