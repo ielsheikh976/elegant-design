@@ -1,0 +1,78 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import BlogsData from "@/app/JsonData/BlogsData.json"
+
+
+function Blog() {
+    return (
+        <>
+            <div className="px-[8%] lg:px-[10%] py-30 pb-20">
+                <div className="flex flex-col lg:flex-row gap-10">
+                    <div className="w-full lg:w-1/3 title p-8">
+                        <span
+                            className="rounded-full title-span border border-gray-400 px-7 py-2 GolosText uppercase font-medium">
+                            Our Latest Blogs
+                        </span>
+                    </div>
+                    <div className="w-full lg:w-2/3">
+                        <h1 className="CalSans text-4xl md:text-7xl mb-5 w-full lg:w-[80%]">
+                            Take A look At <span className="text-(--prim)">Our Latest Blog </span>
+                            & Articles.
+                        </h1>
+                    </div>
+                </div>
+                <div className="flex flex-col lg:flex-row gap-5 mt-20">
+                    <div className="w-full lg:w-1/2">
+                        {BlogsData.slice(0, 1).map((blog, index) => (
+                            <div key={index} className="group cursor-pointer">
+                                <Link href={`/UI-Components/Blogs/${blog.id}`}>
+                                    <div className="blog-image relative rounded-2xl overflow-hidden">
+                                        <Image src={blog.image} alt={blog.title} width={500} height={500}
+                                               className="rounded-2xl w-full h-full group-hover:scale-110 transition-all duration-300" />
+                                        <span className=" absolute top-5 left-5 bg-(--prim) px-4 py-1 font-medium rounded-full text-white
+                                        GolosText">
+                                            {blog.tag}
+                                        </span>
+                                    </div>
+                                    <div className="blog-info mt-3">
+                                        <p className="GolosText text-gray-400">by <span className="text-(--prim) font-semibold">{blog.postby}</span></p>
+                                        <h2 className="text-4xl md:text-5xl my-5 CalSans hover:text-(--prim) transition-all duration-300">{blog.title}</h2>
+                                        <p className="text-gray-500 GolosText">{blog.desc}</p>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="w-full lg:w-1/2">
+                        {BlogsData.slice(0, 3).map((blog, index) => (
+                            <div key={index} className="group cursor-pointer">
+                                <Link href={`/UI-Components/Blogs/${blog.id}`}>
+                                    <div className="flex flex-col md:flex-row gap-4 mb-5 group cursor-pointer">
+                                        <div className="w-full lg:w-1/2 blog-image relative rounded-2xl overflow-hidden">
+                                            <Image src={blog.image} alt={blog.title} width={200} height={200}
+                                                   className="rounded-2xl w-full h-full group-hover:scale-110 transition-all duration-300" />
+                                            <span className=" absolute top-3 left-2 bg-(--prim) px-4 py-1 font-medium rounded-full text-white
+                                        GolosText">
+                                            {blog.tag}
+                                        </span>
+                                        </div>
+                                        <div className="blog-info mt-3 w-full lg:w-1/2">
+                                            <p className="GolosText text-gray-400">by <span className="text-(--prim) font-semibold">{blog.postby}</span></p>
+                                            <h2 className="text-3xl md:text-2xl my-3 CalSans hover:text-(--prim) transition-all duration-300">{blog.title}</h2>
+                                            <p className="text-gray-500 GolosText">{blog.desc}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default Blog;

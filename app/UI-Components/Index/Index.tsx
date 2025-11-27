@@ -7,6 +7,9 @@ import Expertise from "@/app/UI-Components/Index/Expertise/page";
 import PricingPlans from "@/app/UI-Components/Index/PricingPlans/page";
 import Testimonial from "@/app/UI-Components/Index/Testimonial/page";
 import Faqs from "@/app/UI-Components/Index/Faq/page";
+import Banner from "@/app/UI-Components/Index/Banner/page";
+import Blog from "@/app/UI-Components/Index/Blogs/page";
+import NewLetter from "@/app/UI-Components/Index/Newsletter/page";
 
 function Index() {
     return (
@@ -19,6 +22,9 @@ function Index() {
             <PricingPlans/>
             <Testimonial/>
             <Faqs/>
+            <Banner/>
+            <Blog/>
+            <NewLetter/>
         </>
     );
 }

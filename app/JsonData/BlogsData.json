@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "image": "/blog-1.jpg",
+    "imageDet": "/blog-1.jpg",
+    "tag": "Power Tool",
+    "postby": "Admin",
+    "date": "Jun 2 , 2025",
+    "title": "Functional Design Trends That Blend Style and Comfort",
+    "desc": "Modern interior design is all creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living. Whether you're updating a single room or redesigning your entire home."
+  },
+  {
+    "id": "2",
+    "image": "/blog-2.jpg",
+    "imageDet": "/blog-2-det.jpg",
+    "tag": "Electrical & Lighting",
+    "postby": "Admin",
+    "date": "Jun 2 , 2025",
+    "title": "Innovative Interior Ideas to Refresh Your Living Space",
+    "desc": "Modern interior design is all creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living. Whether you're updating a single room or redesigning your entire home."
+  },
+  {
+    "id": "3",
+    "image": "/blog-3.jpg",
+    "imageDet": "/blog-3-det.jpg",
+    "tag": "Accessories",
+    "postby": "Admin",
+    "date": "Jun 2 , 2025",
+    "title": "Transform Your Home With the Modern Interior Design",
+    "desc": "Modern interior design is all creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living. Whether you're updating a single room or redesigning your entire home."
+  }
+
+]
