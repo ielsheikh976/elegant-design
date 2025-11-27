@@ -1,10 +1,10 @@
 "use client";
 
 
-function Blogs({ params }: { params: { id: string } }) {
+function Blogs() {
     return (
         <div>
-            Blogs{params.id}
+            Blogs
         </div>
     );
 }

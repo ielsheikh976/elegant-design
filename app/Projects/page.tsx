@@ -2,10 +2,10 @@
 
 
 
-function Projects({ params }: { params: { id: string } }) {
+function Projects() {
     return (
         <div>
-            Projects{params.id}
+            Projects
         </div>
     );
 }
