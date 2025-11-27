@@ -1,12 +1,13 @@
 "use client";
 
 
-function Project() {
+
+function Projects({ params }: { params: { id: string } }) {
     return (
         <div>
-            Project
+            Projects{params.id}
         </div>
     );
 }
 
-export default Project;
+export default Projects;
