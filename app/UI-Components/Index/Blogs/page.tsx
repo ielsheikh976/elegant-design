@@ -27,7 +27,7 @@ function Blog() {
                     <div className="w-full lg:w-1/2">
                         {BlogsData.slice(0, 1).map((blog, index) => (
                             <div key={index} className="group cursor-pointer">
-                                <Link href={`/Blogs/${blog.id}`}>
+                                <Link href={`/UI-Components//Blogs/${blog.id}`}>
                                     <div className="blog-image relative rounded-2xl overflow-hidden">
                                         <Image src={blog.image} alt={blog.title} width={500} height={500}
                                                className="rounded-2xl w-full h-full group-hover:scale-110 transition-all duration-300" />
@@ -48,7 +48,7 @@ function Blog() {
                     <div className="w-full lg:w-1/2">
                         {BlogsData.slice(0, 3).map((blog, index) => (
                             <div key={index} className="group cursor-pointer">
-                                <Link href={`/Blogs/${blog.id}`}>
+                                <Link href={`/UI-Components//Blogs/${blog.id}`}>
                                     <div className="flex flex-col md:flex-row gap-4 mb-5 group cursor-pointer">
                                         <div className="w-full lg:w-1/2 blog-image relative rounded-2xl overflow-hidden">
                                             <Image src={blog.image} alt={blog.title} width={200} height={200}

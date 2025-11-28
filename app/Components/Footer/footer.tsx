@@ -23,12 +23,12 @@ function Footer() {
                     <div className="footer-content py-3">
                         <ul className="footer-links flex flex-col">
                             {[
-                                {label: "About Us", href: "/Pages/About"},
-                                {label: "Services", href: "/Pages/Services"},
-                                {label: "Gallery", href: "/Pages/Gallery"},
-                                {label: "Our Team", href: "/Pages/Teams"},
-                                {label: "Blog", href: "/Blogs"},
-                                {label: "Contact Us", href: "/Pages/Contact"},
+                                {label: "About Us", href: "/UI-Components/Pages/About"},
+                                {label: "Services", href: "/UI-Components/Pages/Services"},
+                                {label: "Gallery", href: "/UI-Components/Pages/Gallery"},
+                                {label: "Our Team", href: "/UI-Components/Pages/Teams"},
+                                {label: "Blog", href: "/UI-Components/Blogs"},
+                                {label: "Contact Us", href: "/UI-Components/Pages/Contact"},
                             ].map((item, i) => (
                                 <Link key={i}
                                       href={item.href}
@@ -43,12 +43,12 @@ function Footer() {
                     <div className="footer-content py-3">
                         <ul className="footer-links flex flex-col">
                             {[
-                                {label: "Our Projects", href: "/Projects"},
-                                {label: "Partners", href: "/Pages/Services"},
-                                {label: "Partners Program", href: "/Pages/Gallery"},
-                                {label: "Affiliate Program", href: "/Pages/Teams"},
-                                {label: "Terms & Conditions", href: "/Blogs"},
-                                {label: "Support Center", href: "/Pages/Contact"},
+                                {label: "Our Projects", href: "/UI-Components/Projects"},
+                                {label: "Partners", href: "/UI-Components/Pages/Services"},
+                                {label: "Partners Program", href: "/UI-Components/Pages/Gallery"},
+                                {label: "Affiliate Program", href: "/UI-Components/Pages/Teams"},
+                                {label: "Terms & Conditions", href: "/UI-Components/Blogs"},
+                                {label: "Support Center", href: "/UI-Components/Pages/Contact"},
                             ].map((item, i) => (
                                 <Link key={i}
                                       href={item.href}
