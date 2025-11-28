@@ -5,6 +5,10 @@ import {useParams} from "next/navigation";
 import {useState} from "react";
 import CountUp from "react-countup";
 import Image from "next/image";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay} from "swiper/modules";
+import "swiper/css";
+
 
 const DetailInfo = [
     {
@@ -149,7 +153,7 @@ function ProjectDetails() {
                                      duration={8}
                                      enableScrollSpy
                                  >
-                                    {({ countUpRef }) => <span ref={countUpRef} />}
+                                    {({countUpRef}) => <span ref={countUpRef}/>}
                                 </CountUp>
                               </span> M2)
                         </h2>
@@ -166,7 +170,7 @@ function ProjectDetails() {
                                     duration={8}
                                     enableScrollSpy
                                 >
-                                    {({ countUpRef }) => <span ref={countUpRef} />}
+                                    {({countUpRef}) => <span ref={countUpRef}/>}
                                 </CountUp>
 
                               </span> M2)
@@ -184,7 +188,7 @@ function ProjectDetails() {
                                      duration={8}
                                      enableScrollSpy
                                  >
-                                    {({ countUpRef }) => <span ref={countUpRef} />}
+                                    {({countUpRef}) => <span ref={countUpRef}/>}
                                 </CountUp>
                               </span> M2)
                         </h2>
@@ -201,7 +205,7 @@ function ProjectDetails() {
                                      duration={8}
                                      enableScrollSpy
                                  >
-                                    {({ countUpRef }) => <span ref={countUpRef} />}
+                                    {({countUpRef}) => <span ref={countUpRef}/>}
                                 </CountUp>
                               </span> M2)
                         </h2>
@@ -251,6 +255,76 @@ function ProjectDetails() {
                     </div>
                 ))}
             </div>
+
+            <div className="px-[8%] lg:px-[10%] py-20 about">
+                <div className="flex flex-col lg:flex-row gap-10">
+                    <div className="w-full lg:w-1/3 title pt-8">
+                        <span
+                            className="rounded-full title-span border border-gray-400 px-6 py-2 GolosText uppercase font-semibold">
+                            Related Projects
+                        </span>
+                    </div>
+                    <div className="w-full lg:w-2/3">
+                        <h1 className="CalSans text-4xl md:text-7xl w-full lg:w-[60%]">
+                            Explore <span className="text-(--prim)">Our Project </span>Showcase
+                        </h1>
+                    </div>
+                </div>
+                <Swiper
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    loop={true}
+                    autoplay={{
+                        delay: 150,
+                    }}
+                    modules={[Autoplay]}
+                    speed={1800}
+                    breakpoints={{
+                        1200: {slidesPerView: 3},
+                        991: {slidesPerView: 2},
+                        575: {slidesPerView: 1},
+                        0: {slidesPerView: 1},
+                    }}
+                    className="mt-30"
+                >
+                    {ProjectsData.map((project, index) => (
+
+                        <SwiperSlide key={index}>
+                            <div className="project-card group">
+                                <Link href={`/UI-Components/Projects/${project.id}`}>
+                                    <div
+                                        className="project-image relative w-full h-[500px] overflow-hidden rounded-2xl cursor-pointer">
+                                        <div
+                                            className="project-img w-full h-full bg-cover group-hover:scale-110 transition-all duration-500 bg-center"
+                                            style={{backgroundImage: `url(${project.image})`}}>
+                                        </div>
+                                        <div className="absolute top-5 left-5 flex gap-2 z-50">
+                                            {project.tags.map((tag, idx) => (
+                                                <div key={idx} className="bg-white/20 backdrop-blur-sm text-white border border-gray-300 px-4 py-1 rounded-full
+                                                hover:bg-(--prim) hover:border-transparent transition-all duration-300">
+                                                    {tag}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </Link>
+                                <div className="project-info my-5">
+                                    <Link href={`/UI-Components/Projects/${project.id}`}>
+                                        <h2 className="GolosText font-semibold text-3xl hover:text-(--prim) transition-all duration-300">
+                                            {project.title}
+                                        </h2>
+                                    </Link>
+                                    <h5 className="GolosText text-2xl mt-2">{project.location}</h5>
+                                    <p className="GolosText text-md text-gray-700">{project.date}</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                    ))}
+
+                </Swiper>
+            </div>
+
 
         </>
     );

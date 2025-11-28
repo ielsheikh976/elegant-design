@@ -2,7 +2,7 @@
   {
     "id": 1,
     "image": "/Project-1.jpg",
-    "images": ["/Project-1.jpg","/Project-10.jpg","/Project-11.jpg"],
+    "images": ["/gallery-4.jpg","/Project-10.jpg","/Project-11.jpg"],
     "tags": ["Residential"],
     "title": "Industrial elegance condo",
     "location": "Cairo",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "image": "/Project-2.jpg",
-    "images": ["/Project-2.jpg","/Project-12.jpg","/Project-13.jpg"],
+    "images": ["/gallery-5.jpg","/Project-12.jpg","/Project-13.jpg"],
     "tags": ["Residential"],
     "title": "Serene Space Studio",
     "location": "Alex",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "image": "/Project-3.jpg",
-    "images": ["/Project-3.jpg","/Project-14.jpg","/Project-15.jpg"],
+    "images": ["/gallery-6.jpg","/Project-14.jpg","/Project-15.jpg"],
     "tags": ["Residential"],
     "title": "Urban Zen Apartment",
     "location": "Cairo",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "image": "/Project-4.jpg",
-    "images": ["/Project-16.jpg","/Project-4.jpg","/Project-17.jpg"],
+    "images": ["/gallery-img1.jpg","/Project-16.jpg","/Project-17.jpg"],
     "tags": ["Residential", "Single Home"],
     "title": "Art Deco Revival",
     "location": "Alex",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "image": "/Project-5.jpg",
-    "images": ["/Project-18.jpg","/Project-5.jpg","/Project-19.jpg"],
+    "images": ["/gallery-img2.jpg","/Project-18.jpg","/Project-19.jpg"],
     "tags": ["Single Home"],
     "title": "Golden Ratio Residence",
     "location": "Cairo",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "image": "/Project-6.jpg",
-    "images": ["/Project-20.jpg","/Project-6.jpg","/Project-22.jpg"],
+    "images": ["/gallery-img3.jpg","/Project-20.jpg","/Project-21.jpg"],
     "tags": ["Residential"],
     "title": "Nordic Minimalist Loft",
     "location": "Cairo",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "image": "/Project-7.jpg",
-    "images": ["/Project-23.jpg","/Project-7.jpg","/Project-24.jpg"],
+    "images": ["/gallery-img4.jpg","/Project-22.jpg","/Project-24.jpg"],
     "tags": ["Residential"],
     "title": "Modern Tranquility Villa",
     "location": "Cairo",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "image": "/Project-8.jpg",
-    "images": ["/Project-25.jpg","/Project-8.jpg","/Project-13.jpg"],
+    "images": ["/Project-25.jpg","/gallery-img5.jpg","/Project-26.jpg"],
     "tags": ["Residential"],
     "title": "Vintage Glamour",
     "location": "Cairo",
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "image": "/Project-9.jpg",
-    "images": ["/Project-9.jpg","/Project-26.jpg","/Project-15.jpg"],
+    "images": ["/gallery-3.jpg","/gallery-1.jpg","/gallery-2.jpg"],
     "tags": ["Residential"],
     "title": "Bohemian Rhapsody",
     "location": "Cairo",
