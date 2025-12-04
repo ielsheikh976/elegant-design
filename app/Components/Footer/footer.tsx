@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {SlSocialFacebook} from "react-icons/sl";
 import {BsTwitterX} from "react-icons/bs";
