@@ -61,7 +61,7 @@ function ProjectDetails() {
     return (
         <>
             <div className="section-bg text-white flex flex-col">
-                <h1 className="text-6xl md:text-8xl GolosText mt-15">
+                <h1 className="text-5xl md:text-8xl GolosText mt-15">
                     Project Details
                 </h1>
                 <div className="flex items-center text-xl mt-3">

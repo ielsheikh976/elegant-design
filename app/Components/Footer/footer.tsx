@@ -70,6 +70,7 @@ function Footer() {
                         <div className="footer-social flex gap-4 py-6">
                             <SlSocialFacebook
                                 size={40}
+                                onClick={() => window.open("https://facebook.com/profile.php?id=61577612399445", "_blank")}
                                 className="text-gray-300 cursor-pointer transition-all duration-300
                                        hover:text-[var(--prim)] hover:scale-125
                                        hover:shadow-[0_0_12px_var(--prim)] p-2 rounded-full
@@ -86,6 +87,7 @@ function Footer() {
 
                             <FaWhatsapp
                                 size={40}
+                                onClick={() => window.open("https://wa.me/201009067128", "_blank")}
                                 className="text-gray-300 cursor-pointer transition-all duration-300
                                            hover:text-[var(--prim)] hover:scale-125
                                            hover:shadow-[0_0_12px_var(--prim)] p-2 rounded-full

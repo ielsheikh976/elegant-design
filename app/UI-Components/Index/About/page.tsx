@@ -8,25 +8,25 @@ import CountUp from "react-countup";
 
 const statsData = [
     {
-        value: 2013,
+        value: 8,
         suffix: "",
         title: "Years experience",
         desc: "Improving homes with expert craftsmanship for years"
     },
     {
-        value: 190,
+        value: 20,
         suffix: "+",
         title: "Projects completed",
         desc: "Over 250 successful projects delivered with quality and care"
     },
     {
-        value: 260,
+        value: 100,
         suffix: "+",
         title: "Skilled Tradespeople",
         desc: "Our team of 30 experts ensures top-quality results"
     },
     {
-        value: 328,
+        value: 120,
         suffix: "+",
         title: "Client satisfaction",
         desc: "All of our clients are satisfied with our work and service"
