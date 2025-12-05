@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "/team-7.jpg",
+    "name": "Mohamed Torky",
+    "role": "Co-Founder & CEO",
+    "exp": "6 Years",
+    "number": "01030959797",
+    "desc": "Visionary leader with a strong passion for modern interior design and functional aesthetics. With six years of hands-on experience, he oversees project strategy, client relationships, and creative direction. His focus on innovation and excellence ensures that every design reflects the company’s core values of quality, elegance, and precision."
+  },
+  {
+    "id": 2,
+    "image": "/team-7.jpg",
+    "name": "Mohamed Elshaby",
+    "role": "Interior Designer",
+    "exp": "6 Years",
+    "number": "01009067128",
+    "desc": "Talented interior designer known for creating refined, balanced spaces that combine comfort, craftsmanship, and style. With six years of professional experience, he specializes in concept development, material selection, and detailed interior planning. His creative approach transforms client ideas into functional designs that elevate everyday living with beauty and purpose."
+  },
+  {
+    "id": 3,
+    "image": "/team-7.jpg",
+    "name": "Ibrahim Elsheikh",
+    "role": "Interior Designer",
+    "exp": "6 Years",
+    "number": "01277104751",
+    "desc": "Visionary leader with a strong passion for modern interior design and functional aesthetics. With six years of hands-on experience, he oversees project strategy, client relationships, and creative direction. His focus on innovation and excellence ensures that every design reflects the company’s core values of quality, elegance, and precision."
+  }
+
+]
