@@ -106,7 +106,7 @@ function Navbar() {
                                                     key={item.label}
                                                     href={item.href}
                                                     className="block px-4 py-2 text-md hover:text-(--prim) transition-all duration-300">
-                                                    <i className="bi bi-gear text-xs px-1"/>{item.label}
+                                                    <i className="bi bi-arrow-return-right text-xs px-1"/>{item.label}
                                                 </Link>
                                             ))}
 
