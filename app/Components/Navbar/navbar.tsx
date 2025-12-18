@@ -126,15 +126,15 @@ function Navbar() {
                 </div>
                 <div className="flex items-center gap-4">
                     <button className="hidden xl:flex items-center gap-1 cursor-pointer"
-                            onClick={() => window.location.href = 'tel:+201277104751'}>
+                            onClick={() => window.location.href = 'tel:+201009067128'}>
                         <i className="bi bi-telephone-inbound text-md px-3 py-2 rounded-full"/>
                         <div className="flex flex-col items-start">
                             <p>Call Us Now</p>
-                            <h3 className="text-(--prim)">+201277104751</h3>
+                            <h3 className="text-(--prim)">+201009067128</h3>
                         </div>
                     </button>
                     <Link href="/UI-Components//Pages/Contact">
-                        <button className="bg-(--prim) text-sm lg:text-md text-white font-medium lg:px-5 px-2 py-3 rounded-full hover:bg-white
+                        <button onClick={() => window.location.href = 'tel:+201009067128'} className="bg-(--prim) text-sm lg:text-md text-white font-medium lg:px-5 px-2 py-3 rounded-full hover:bg-white
                         hover:text-(--black) border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300">
                             Get a Quote!
                         </button>
